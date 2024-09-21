@@ -15,15 +15,124 @@
      <!-- fontawesom -->
       <script src="https://kit.fontawesome.com/8c5e170e61.js" crossorigin="anonymous"></script>
 
+      <!-- tailwind config -->
+       <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1dd100',
+                        secondary: '#030712',
+                        couponOne: '#ffbf0f',
+                        couponTwo: '#f78c9c',
+                        mobileMenu: '#f7f8f8',
+                        body: '#03071299',
+                        buttonColor: 'rgba(29, 209, 0, 0.15)',
+                    },
+                    fontFamily: {
+                        RaleWay: 'Raleway',
+                        Inter: 'Inter',
+                    },
+                },
+                container: {
+                    center: true,
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '5rem',
+        xl: '6rem',
+        '2xl': '8rem',
+      },
+    },
+            },
+        }
+    </script>
+
      
 </head>
 <body class="bg-gray-100">
-    <header></header>
+    <header class="container pt-8 relative">
+        <nav class="relative pb-4">
+            <div class="flex items-center justify-between">
+                <button class="text-2xl font-bold">P-Ticket</button>
+                <div class="hidden md:block">
+                    <ul class="flex items-center gap-8">
+                        <li class="text-lg font-semibold"><a href="">Home</a></li>
+                        <li class="text-lg font-semibold"><a href="">About</a></li>
+                        <li class="text-lg font-semibold"><a href="">Destination</a></li>
+                        <li class="text-lg font-semibold"><a href="">Search</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center ">
+                    <div class="">
+                        <button class="flex text-xl items-center px-4 py-2  bg-[#1DD1001A] gap-1 rounded-xl font-bold">Bus<img src="images/bus-icon.png" alt=""></button>
+                    </div>
+                    <div class="flex ml-4 md:ml-0">
+                      <i id="barIcon" class="fa-solid fa-bars font-bold text-3xl md:hidden"></i> 
+                      <i id="crossIcon" class="fa-solid fa-xmark text-3xl font-bold hidden"></i> 
+                    </div>
+                </div>
+            </div>
+             <div id="navbar" class=" absolute left-0 right-0 bg-gray-100 z-10 hidden">
+                    <ul class="flex flex-col items-center justify-end gap-4">
+                        <li class="text-lg font-semibold"><a href="">Home</a></li>
+                        <li class="text-lg font-semibold"><a href="">About</a></li>
+                        <li class="text-lg font-semibold"><a href="">Destination</a></li>
+                        <li class="text-lg font-semibold"><a href="">Search</a></li>
+                    </ul>
+                </div>
+        </nav>
+        <!-- header-body -->
+         <div style="background-image: url(images/banner.png); background-repeat: no-repeat;" class="bg-cover pt-10 pb-10 md:pb-24 bg-center rounded-2xl text-center space-y-5">
+            <h1 class="text-2xl md:text-4xl lg:text-6xl font-bold text-white text-center ">End-to-End Travel with <br>
+            <span class="text-[#1DD100]">P Paribahan</span></h1>
+            <p class="text-center text-sm md:text-xl xl:text-2xl w-11/12 md:w-2/3 mx-auto text-white">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+            <button class="bg-[#1DD100] p-3 rounded-xl font-bold text-xs md:text-sm text-white">Buy Tickets</button>
+         </div>
+         <!-- card container -->
+          <div class="flex items-center justify-around md:-mt-16 flex-col md:flex-row gap-3  z-10 mt-5">
+          <!-- card1 -->
+          <div class="flex items-center gap-2 p-8 md:px-4 lg:px-8 border-b-4  border-primary rounded-2xl bg-white w-full md:w-auto">
+            <img src="images/people.png" alt="">
+            <div>
+              <h3 class="font-bold text-2xl md:text-xl lg:text-2xl ">500K+</h3>
+              <p class="text-lg md:text-sm font-semibold lg:text-lg">Registered users</p>
+            </div>
+          </div>
+          <!-- card1 -->
+          <div class="flex items-center gap-2 p-8 md:px-4 lg:px-8 border-b-4  border-primary rounded-2xl bg-white w-full md:w-auto">
+            <img src="images/people.png" alt="">
+            <div>
+              <h3 class="font-bold text-2xl md:text-xl lg:text-2xl ">500K+</h3>
+              <p class="text-lg md:text-sm font-semibold lg:text-lg">Registered users</p>
+            </div>
+          </div>
+          <!-- card1 -->
+          <div class="flex items-center gap-2 p-8 md:px-4 lg:px-8 border-b-4  border-primary rounded-2xl bg-white w-full md:w-auto">
+            <img src="images/people.png" alt="">
+            <div>
+              <h3 class="font-bold text-2xl md:text-xl lg:text-2xl ">500K+</h3>
+              <p class="text-lg md:text-sm font-semibold lg:text-lg">Registered users</p>
+            </div>
+          </div>
+          
+         </div>
+    </header>
     <main>
+      <!-- best offer -->
+       <section>
+        <div class="container mt-20">
+          <div>
+            <div></div>
+
+          </div>
+        </div>
+       </section>
+     
         <!-- sear booking secton -->
-        <section class="bg-white px-8 py-5 w-11/12 mx-auto shadow-sm grid grid-cols-3 gap-5 ">
+        <section class="bg-white container shadow-sm grid grid-cols-3 gap-5 mt-20">
             <!--seat section  -->
-           <div class="col-span-3 md:col-span-2 md:border-r border-gray-400 border-dashed pr-6">
+           <div class="col-span-3 md:col-span-2 md:border-r border-gray-400 border-dashed pr-6 ">
             <div class="font-bold text-2xl p-6">Select Your Seat</div>
                 <div class="border border-dashed"></div>
                 <div class="p-5 flex justify-between items-center">
@@ -43,11 +152,11 @@
                     <!-- first row -->
                    </div> 
                    <p class="col-span-1 text-lg">A</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button  class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">A1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">A2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">A3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">A4</button>
@@ -55,11 +164,11 @@
                    </div> 
                    <!-- second row -->
                    <p class="col-span-1 text-lg">B</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">B1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out text-lg">B2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">B3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">B4</button>
@@ -67,11 +176,11 @@
                    </div> 
                     <!-- Third row -->
                      <p class="col-span-1 text-lg">C</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">C1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">C2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">C3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">C4</button>
@@ -79,11 +188,11 @@
                    </div> 
                    <!-- fourth row -->
                      <p class="col-span-1 text-lg">D</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">D1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">D2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">D3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">D4</button>
@@ -91,11 +200,11 @@
                    </div> 
                    <!-- fifth row -->
                      <p class="col-span-1 text-lg">E</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">E1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">E2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">E3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">E4</button>
@@ -103,11 +212,11 @@
                    </div> 
                    <!-- sixth row -->
                     <p class="col-span-1 text-lg">F</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">F1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">F2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">F3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">F4</button>
@@ -115,22 +224,22 @@
                    </div> 
                    <!-- sevent row -->
                     <p class="col-span-1 text-lg">G</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">G1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">G2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">G3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">G4</button>
                    </div> 
                    <!-- eight row -->
                     <p class="col-span-1 text-lg">H</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">H1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">H2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 text-lg">H3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">H4</button>
@@ -138,11 +247,11 @@
                    </div> 
                    <!-- nineth row -->
                     <p class="col-span-1 text-lg">I</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">I1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">I2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">I3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">I4</button>
@@ -150,11 +259,11 @@
                    </div> 
                    <!-- tenth row -->
                     <p class="col-span-1 text-lg">J</p>
-                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <div class="col-span-11 grid grid-cols-9 gap-8 items-center text-center">
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">J1</button>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">J2</button>
                     
-                    <p class="col-span-2"></p>
+                    <p class="col-span-1"></p>
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">J3</button>
                     
                     <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">J4</button>

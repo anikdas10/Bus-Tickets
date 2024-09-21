@@ -6,6 +6,21 @@ const CoupnInput =  document.getElementById('input-coupn');
 const CoupnButtton =  document.getElementById('coupne-button');
 const GrandTotal = document.getElementById("Grand-total");
 
+// navbar
+const navBar = document.getElementById("navbar");
+const BarIcon = document.getElementById("barIcon");
+const crossIcon = document.getElementById("crossIcon");
+BarIcon.addEventListener('click',function(){
+   navBar.classList.remove("hidden"); 
+   BarIcon.classList.add('hidden');
+   crossIcon.classList.remove('hidden')
+});
+crossIcon.addEventListener("click",function(){
+    navBar.classList.add("hidden"); 
+   BarIcon.classList.remove('hidden');
+   crossIcon.classList.add('hidden')
+})
+
 for( const button of buttons){
    button.addEventListener('click',function(){
     const selectedSit = document.getElementById("selected-sit");
@@ -82,4 +97,4 @@ PhoneInput.addEventListener("input",function(){
  
 document.getElementById("Continue-btn").addEventListener("click", function(){
     window.location.reload();
-})
+});
