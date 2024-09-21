@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B9-A5</title>
+    <!-- daisy ui -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <!-- fontawesom -->
+      <script src="https://kit.fontawesome.com/8c5e170e61.js" crossorigin="anonymous"></script>
+
+     
+</head>
+<body class="bg-gray-100">
+    <header></header>
+    <main>
+        <!-- sear booking secton -->
+        <section class="bg-white px-8 py-5 w-11/12 mx-auto shadow-sm grid grid-cols-3 gap-5 ">
+            <!--seat section  -->
+           <div class="col-span-3 md:col-span-2 md:border-r border-gray-400 border-dashed pr-6">
+            <div class="font-bold text-2xl p-6">Select Your Seat</div>
+                <div class="border border-dashed"></div>
+                <div class="p-5 flex justify-between items-center">
+                    <p class="text-lg font-bold"> <i class="fa-solid fa-couch"></i> Available</p>
+                    <p class="text-lg font-bold text-[#1DD100]"> <i class="fa-solid fa-couch"></i> Selected</p>
+                </div>
+                <div class="border border-dashed"></div>
+
+                <!-- sit option  -->
+                 <div class="grid grid-cols-12 items-center gap-5 mt-8">
+                   <p class="col-span-1"></p>
+                   <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <p class="col-span-8"></p>
+                    <button class="btn col-span-2 ">
+                        <img src="images/steering-wheel.png" class="w-10" alt="">
+                    </button>
+                    <!-- first row -->
+                   </div> 
+                   <p class="col-span-1 text-lg">A</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button  class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">A1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">A2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">A3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">A4</button>
+                    <!-- first row -->
+                   </div> 
+                   <!-- second row -->
+                   <p class="col-span-1 text-lg">B</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">B1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white transition-colors duration-200 ease-in-out text-lg">B2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">B3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">B4</button>
+                    
+                   </div> 
+                    <!-- Third row -->
+                     <p class="col-span-1 text-lg">C</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">C1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">C2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">C3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">C4</button>
+                    
+                   </div> 
+                   <!-- fourth row -->
+                     <p class="col-span-1 text-lg">D</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">D1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">D2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">D3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">D4</button>
+                    
+                   </div> 
+                   <!-- fifth row -->
+                     <p class="col-span-1 text-lg">E</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">E1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">E2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">E3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">E4</button>
+                    
+                   </div> 
+                   <!-- sixth row -->
+                    <p class="col-span-1 text-lg">F</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">F1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">F2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">F3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">F4</button>
+                    
+                   </div> 
+                   <!-- sevent row -->
+                    <p class="col-span-1 text-lg">G</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">G1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">G2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">G3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">G4</button>
+                   </div> 
+                   <!-- eight row -->
+                    <p class="col-span-1 text-lg">H</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">H1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">H2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 text-lg">H3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">H4</button>
+                    
+                   </div> 
+                   <!-- nineth row -->
+                    <p class="col-span-1 text-lg">I</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">I1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">I2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">I3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">I4</button>
+                    
+                   </div> 
+                   <!-- tenth row -->
+                    <p class="col-span-1 text-lg">J</p>
+                    <div class="col-span-11 grid grid-cols-10 gap-8 items-center text-center">
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">J1</button>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">J2</button>
+                    
+                    <p class="col-span-2"></p>
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">J3</button>
+                    
+                    <button class="js-btn btn btn-md col-span-2 hover:bg-black hover:text-white text-lg">J4</button>
+                    
+                   </div> 
+
+                 </div>
+           </div>
+            <!-- select sit section -->
+            <div class="col-span-3 md:col-span-1">
+              <div class="font-bold text-2xl p-6">Select Your Seat</div>
+               <div class="border border-dashed"></div>
+               <div class="bg-gray-100 mt-4 p-8 rounded-xl">
+                <div class="flex justify-between pb-3 font-bold">
+                    <p class="flex  ">
+                        <span>Seat</span>
+                        <span id="Total-booked" class="bg-[#1DD100] w-4 h-4 p-2 rounded-full font-normal text-sm text-white flex justify-center items-center">0</span>
+                    </p>
+                    <p>Class</p>
+                    <p>Price</p>
+                </div>
+                <div class="border border-dashed"></div>
+                <ul id="selected-sit" class="space-y-5 py-3">
+                    <h3 id="selected-sit-text" class="text-center text-2xl text-red-500 font-semibold ">NO SEAT BOOKED</h3>
+                </ul>
+                <div class="border border-dashed"></div>
+                <div class="flex justify-between font-bold py-4">
+                    <p>Total Price</p>
+                    <p><span>BDT:</span>
+                        <span id="Price">***</span>
+                     </p>
+                </div>
+                <div class="border border-dashed"></div>
+                <div id="Show-coupon-price" class=" mt-4 flex justify-between p-2 rounded-2xl bg-white text-lg font-semibold">
+                    <input type="text"  class=" pl-6 outline-none w-2/3  " disabled name="" id="input-coupn" placeholder="Have any copuon?">
+                    <button class=" btn text-white bg-[#1DD100] font-bold" id="coupne-button" disabled>Apply</button>
+                </div>
+                 <div class="flex justify-between font-bold py-4">
+                    <p>Grand Total</p>
+                    <p><span>BDT:</span>
+                        <span id="Grand-total">***</span>
+                     </p>
+                </div>
+              
+               </div>
+               <!-- form section -->
+                 <div class="card bg-base-100  shrink-0 w-full">
+      <form class="card-body ">
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">Passenger Name*</span>
+          </label>
+          <input type="text" placeholder="Enter your name" class="input input-bordered" required />
+        </div>
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text font-bold">Phone Number*</span>
+          </label>
+          <input id="Phone-number" type="number" placeholder="Enter your phone number" class="input input-bordered" required />
+          <label class="label">
+            <span class="label-text font-bold">Email ID</span>
+          </label>
+          <input type="email" placeholder="Enter your email id" class="input input-bordered" required />
+          
+        </div>
+        <div class="form-control mt-6">
+         <button onclick="my_modal_1.showModal()" class=" btn text-xl text-white bg-[#1DD100] font-bold" id="Next-button" disabled>Next</button>
+        </div>
+        <div class="flex justify-between p-4">
+            <a href="" class="text-xs border-b">Terms and Conditions</a>
+            <a href="" class="text-xs border-b">Cancellation Policy</a>
+        </div>
+      </form>
+    </div>
+
+            </div>
+
+        </section>
+        <!-- Modal -->
+         <div>
+            <dialog id="my_modal_1" class="modal">
+  <div class="modal-box ">
+    <div class="flex flex-col justify-center items-center space-y-8 p-5">
+        <img src="images/success.png" alt="">
+        <h3 class="font-bold text-2xl text-[#27AE60]">SUCCESS</h3>
+        <h5 class="text-xl  text-center"><span class="font-bold">Thank you for Booking Our Bus seats. <br>
+We are working hard to find the best service and deals for you.</span> <br>
+Shortly you will find a confirmation in your email. </h5>
+
+<button id="Continue-btn" class="bg-[#27AE60] py px-20 py-4 rounded-full text-white">Continue</button>
+   
+    </div>
+    
+  </div>
+</dialog>
+         </div>
+    </main>
+    <footer></footer>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
